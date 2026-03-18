@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cav-e-Innov</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Cav-e-Innov</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Next-Gen Cavity Enabled Sensors</h1>
+        <p>Advanced sensing & embedded systems</p>
+        <button onclick="scrollToSection('contact')">Get in Touch</button>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <h2>Our Expertise</h2>
+    <div class="cards">
+        <div class="card"><h3>Sensors</h3></div>
+        <div class="card"><h3>Embedded</h3></div>
+        <div class="card"><h3>AI</h3></div>
+    </div>
+</section>
+
+<section id="contact" class="section dark">
+    <h2>Contact</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+</section>
+
+<footer>
+<p>© 2026 Cav-e-Innov</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

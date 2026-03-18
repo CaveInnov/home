@@ -1,0 +1,7 @@
+body{font-family:Arial;margin:0}
+.navbar{display:flex;justify-content:space-between;padding:20px;background:#0b0f1a;color:#fff}
+.hero{height:80vh;display:flex;align-items:center;justify-content:center;background:#1e3a8a;color:#fff}
+.section{padding:40px;text-align:center}
+.cards{display:flex;gap:20px;justify-content:center}
+.card{padding:20px;background:#eee}
+.dark{background:#0b0f1a;color:#fff}
