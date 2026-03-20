@@ -7,9 +7,11 @@
 <meta name="description" content="Cav-e-innoV develops cavity-enabled sensors and embedded systems for industrial, biomedical, and robotics applications. Incubated at IIT Delhi." />
 
 <link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
 <link href="css/flexslider.css" rel="stylesheet" />
 <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet"> 
+<link href="css/style.css" rel="stylesheet" />
 
 </head>
 
@@ -23,8 +25,8 @@
     <div class="col-md-12">
         <div class="contact-area">
             <ul>
-                <li>📞 +91-XXXXXXXXXX</li>
-                <li>✉ caveinnov@gmail.com</li>
+                <li><i class="fa fa-phone-square"></i> +91-XXXXXXXXXX</li>
+                <li><i class="fa fa-envelope-o"></i> info@caveinnov.com</li>
             </ul>
         </div>
     </div>
@@ -34,6 +36,11 @@
 <div class="navbar navbar-default navbar-static-top">
 <div class="container">
     <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="index.html">
             <strong>Cav-e-innoV</strong>
         </a>
@@ -41,43 +48,44 @@
 
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Applications</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 </div>
 </div>
 </header>
 
-<!-- HERO SLIDER -->
+<!-- SLIDER -->
 <section id="featured">
 <div id="main-slider" class="flexslider">
 <ul class="slides">
 
 <li>
-<img src="img/slides/1.jpg" />
+<img src="img/slides/1.jpg" alt="" />
 <div class="flex-caption">
-<h3>Next-Gen Sensing Technology</h3>
-<p>Advanced cavity-enabled sensors for ultra-high precision measurements.</p>
+<h3>Next-Gen Cavity-Enabled Sensors</h3>
+<p>Ultra-high sensitivity sensing systems designed for precision applications.</p>
 </div>
 </li>
 
 <li>
-<img src="img/slides/2.jpg" />
+<img src="img/slides/2.jpg" alt="" />
 <div class="flex-caption">
 <h3>Embedded Intelligence</h3>
-<p>Custom embedded systems for real-time industrial and biomedical applications.</p>
+<p>Real-time embedded systems for industrial, biomedical, and robotics use.</p>
 </div>
 </li>
 
 <li>
-<img src="img/slides/3.jpg" />
+<img src="img/slides/3.jpg" alt="" />
 <div class="flex-caption">
 <h3>Incubated at IIT Delhi</h3>
-<p>Deep-tech innovation backed by cutting-edge research and engineering.</p>
+<p>Deep-tech innovation powered by cutting-edge research and engineering.</p>
 </div>
 </li>
 
@@ -90,27 +98,46 @@
 <div class="container">
 <div class="row">
 
-<div class="col-lg-6">
+<div class="col-lg-6 col-md-6 col-sm-6">
 <img src="img/1.jpg" alt="" />
 </div>
 
-<div class="col-lg-6">
+<div class="col-lg-6 col-md-6 col-sm-6">
 <h2>Who We Are</h2>
 
 <p>
-Cav-e-innoV is a deep-tech startup focused on developing next-generation cavity-enabled sensing solutions and embedded electronic systems. Incubated at IIT Delhi, we bridge fundamental research with real-world engineering to deliver high-performance sensing platforms.
+Cav-e-innoV is a deep-tech company focused on developing advanced cavity-enabled sensing technologies and embedded systems. Incubated at IIT Delhi, we combine scientific innovation with engineering excellence to deliver impactful solutions.
 </p>
 
 <p>
-Our expertise spans optics, signal processing, embedded systems, and AI-driven sensing, enabling applications across industrial automation, biomedical diagnostics, and robotics.
+Our multidisciplinary expertise spans optics, electronics, signal processing, and intelligent systems—enabling high-performance sensing platforms across industries.
 </p>
 
+<div class="row">
+<div class="col-md-4">
 <ul>
-<li>✔ Cavity-enhanced sensing systems</li>
-<li>✔ Real-time embedded processing</li>
-<li>✔ Custom hardware design</li>
-<li>✔ AI-integrated signal analysis</li>
+<li>Optical Sensing</li>
+<li>Embedded Design</li>
+<li>Signal Processing</li>
 </ul>
+</div>
+
+<div class="col-md-4">
+<ul>
+<li>Biomedical Devices</li>
+<li>Industrial Systems</li>
+<li>AI Integration</li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<ul>
+<li>Robotics</li>
+<li>Automation</li>
+<li>Product Development</li>
+</ul>
+</div>
+</div>
 
 </div>
 </div>
@@ -121,29 +148,57 @@ Our expertise spans optics, signal processing, embedded systems, and AI-driven s
 <section id="service">
 <div class="container">
 <div class="row">
-
 <div class="col-md-12">
-<h2 style="text-align:center;">Our Core Technologies</h2>
-<br>
 
-<div class="col-md-3">
-<h4>Optical Sensors</h4>
-<p>High-sensitivity cavity-based optical sensing systems for precision measurement and diagnostics.</p>
+<div class="block-bottom">
+<div class="service-tab">
+
+<ul class="badhon-tab" role="tablist">
+<li><a href="#home" data-toggle="tab">
+<i class="fa fa-bell-o"></i>
+Optical Sensors
+</a></li>
+
+<li class="active"><a href="#profile" data-toggle="tab">
+<i class="fa fa-html5"></i>
+Embedded Systems
+</a></li>
+
+<li><a href="#messages" data-toggle="tab">
+<i class="fa fa-code"></i>
+Biomedical Tech
+</a></li>
+
+<li><a href="#settings" data-toggle="tab">
+<i class="fa fa-compress"></i>
+Robotics
+</a></li>
+</ul>
+
+<div class="tab-content edit-tab-content">
+
+<div class="tab-pane" id="home">
+<h3>Advanced Optical Sensing</h3>
+<p>We design cavity-enhanced sensing systems capable of ultra-sensitive measurements for industrial and scientific applications.</p>
 </div>
 
-<div class="col-md-3">
-<h4>Embedded Systems</h4>
-<p>Custom embedded platforms for real-time data acquisition and control in industrial environments.</p>
+<div class="tab-pane active" id="profile">
+<h3>Embedded Systems Engineering</h3>
+<p>Custom embedded platforms for real-time sensing, control, and intelligent data acquisition.</p>
 </div>
 
-<div class="col-md-3">
-<h4>Biomedical Devices</h4>
-<p>Innovative sensing solutions for healthcare, including non-invasive diagnostics and monitoring.</p>
+<div class="tab-pane" id="messages">
+<h3>Biomedical Devices</h3>
+<p>Non-invasive and high-precision sensing technologies for healthcare and diagnostics.</p>
 </div>
 
-<div class="col-md-3">
-<h4>Robotics Integration</h4>
-<p>Sensor-driven robotics systems enabling perception, control, and intelligent automation.</p>
+<div class="tab-pane" id="settings">
+<h3>Robotics Integration</h3>
+<p>Sensor-integrated robotic systems enabling perception, autonomy, and smart decision-making.</p>
+</div>
+
+</div>
+</div>
 </div>
 
 </div>
@@ -151,38 +206,12 @@ Our expertise spans optics, signal processing, embedded systems, and AI-driven s
 </div>
 </section>
 
-<!-- APPLICATIONS -->
-<section id="applications" style="padding:40px;">
-<div class="container">
-<h2 style="text-align:center;">Applications</h2>
-
-<div class="row" style="margin-top:30px;">
-
-<div class="col-md-4">
-<h4>Industrial Automation</h4>
-<p>Precision monitoring, fault detection, and process optimization using advanced sensing.</p>
-</div>
-
-<div class="col-md-4">
-<h4>Healthcare & Diagnostics</h4>
-<p>Portable and accurate sensing systems for biomedical applications and research.</p>
-</div>
-
-<div class="col-md-4">
-<h4>Smart Robotics</h4>
-<p>Sensor-enabled perception systems for autonomous and semi-autonomous robots.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- TESTIMONIAL -->
+<!-- VISION -->
 <div class="testimonial-area">
 <div class="container">
 <h2 style="text-align:center;">Our Vision</h2>
-<p style="text-align:center; max-width:700px; margin:auto;">
-To revolutionize sensing technologies by combining physics-driven innovation with scalable engineering, enabling smarter industries, better healthcare, and intelligent machines.
+<p style="text-align:center;">
+To revolutionize sensing and embedded technologies by merging physics-driven innovation with scalable engineering solutions.
 </p>
 </div>
 </div>
@@ -192,32 +221,40 @@ To revolutionize sensing technologies by combining physics-driven innovation wit
 <div class="container">
 <div class="row">
 
-<div class="col-md-4">
+<div class="col-md-3">
 <h5>Contact</h5>
 <p>
 Cav-e-innoV<br>
 IIT Delhi Incubation Center<br>
 New Delhi, India<br>
-caveinnov@gmail.com
+info@caveinnov.com
 </p>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-3">
 <h5>Quick Links</h5>
 <ul>
-<li><a href="#">About</a></li>
-<li><a href="#">Technology</a></li>
-<li><a href="#">Applications</a></li>
+<li><a href="#">Latest Events</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
 <li><a href="#">Careers</a></li>
 </ul>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-3">
 <h5>Focus Areas</h5>
 <ul>
 <li>Optical Sensing</li>
 <li>Embedded Systems</li>
 <li>Biomedical Engineering</li>
+</ul>
+</div>
+
+<div class="col-md-3">
+<h5>Applications</h5>
+<ul>
+<li>Industrial Automation</li>
+<li>Healthcare</li>
 <li>Robotics</li>
 </ul>
 </div>
@@ -225,9 +262,16 @@ caveinnov@gmail.com
 </div>
 </div>
 
-<div style="text-align:center; padding:10px;">
-© 2026 Cav-e-innoV. All rights reserved.
+<div id="sub-footer">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<p>© 2026 Cav-e-innoV. All rights reserved.</p>
 </div>
+</div>
+</div>
+</div>
+
 </footer>
 
 </div>
